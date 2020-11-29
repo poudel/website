@@ -1,0 +1,31 @@
+#+title: Keshab Paudel - Software Engineer
+#+description: I like to call myself a reader and writer of code, but I'm a generalist at heart
+#+author: Keshab Paudel
+#+export_file_name: index
+#+options: toc:nil author:nil num:nil timestamp:nil title:nil
+#+options: html-style:nil
+#+html_head: <link rel="stylesheet" type="text/css" href="static/index.css"/>
+
+* Keshab Paudel
+
+Hi there!
+
+My name is Keshab. I read, and write code. I was born and raised in
+Nepal but I'm living in Berlin, Germany at the moment.
+
+I've worn different hats throughout the years. I consider myself to be
+a generalist, in spite of the tapering job titles I've held.
+
+- [[./blog/][Blog]]
+- [[https://github.com/poudel][GitHub @poudel]]
+- [[https://keshab.net][https://keshab.net]]
+
+* 
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: footer
+:END:
+
+Opinions shared here, unless otherwise noted, are my own and not
+that of my employers, present or past.
+
+Copyright © 2020 Keshab Paudel.
