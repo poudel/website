@@ -10,10 +10,8 @@ clean:
 	@rm -rvf ~/.org-timestamps/*
 
 
-pub: 
-	@echo "Deleting old..."
-	rm -rf public
-	mkdir public
+pub:
+	$(MAKE) clean
 	git worktree prune
 	rm -rf .git/worktrees/public
 
@@ -26,4 +24,4 @@ pub:
 	$(MAKE) build
 
 	@echo "Updating gh-pages branch"
-	cd public && git add --all && git commit -m "publishing to gh-pages"
+	cd public && git add --all && git commit -m "publishing to gh-pages" && git push origin gh-pages --force
