@@ -11,6 +11,7 @@ clean:
 
 
 pub:
+	bash -c "if [ \"`git status -s`\" ]; then echo \"Working directory is dirty\"; exit 1; fi;"
 	$(MAKE) clean
 	git worktree prune
 	rm -rf .git/worktrees/public
