@@ -1,7 +1,5 @@
-#+title: test blog
+#+title: hello world
 #+date: <2020-11-29 01:40>
-#+filetags: other
 
 I've lost count of times I've attempted to start a blog.
-
 Maybe it'll be different this time. Maybe.

@@ -4,6 +4,15 @@ build: website.el
 	cp src/CNAME public/
 
 
+#needs inotify-tools installed
+watch:
+	bash -c "while inotifywait -r -e close_write ./src; do make build; done"
+
+
+serve:
+	$(MAKE) build
+	python -m http.server --directory=public 2929
+
 clean:
 	@echo "Cleaning up.."
 	@rm -rvf *.elc
@@ -27,4 +36,4 @@ pub:
 	$(MAKE) build
 
 	@echo "Updating gh-pages branch"
-	cd public && git add --all && git commit -m "publishing to gh-pages" && git push origin gh-pages --force
+	cd public && git add . && git commit -m "publishing to gh-pages" && git push origin gh-pages --force
