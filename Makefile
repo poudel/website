@@ -1,6 +1,7 @@
 build: website.el
 	@echo "Building the website"
 	emacs --batch -q -l website.el -f org-publish-all
+	cp src/CNAME public/
 
 
 clean:
@@ -10,6 +11,7 @@ clean:
 	@rm -rvf ~/.org-timestamps/*
 
 
+# Nicked from https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-gh-pages-branch
 pub:
 	bash -c "if [ \"`git status -s`\" ]; then echo \"Working directory is dirty\"; exit 1; fi;"
 	$(MAKE) clean
