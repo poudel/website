@@ -2,9 +2,10 @@
 #+description: I like to call myself a reader and writer of code, but I'm a generalist at heart
 #+author: Keshab Paudel
 #+export_file_name: index
-#+options: toc:nil author:nil num:nil timestamp:nil title:nil
-#+options: html-style:nil
 #+html_head: <link rel="stylesheet" type="text/css" href="static/index.css"/>
+#+html_doctype: html5
+#+OPTIONS: toc:nil author:nil num:nil timestamp:nil title:nil
+#+OPTIONS: html-style:nil
 
 * Keshab Paudel
 

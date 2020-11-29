@@ -37,3 +37,4 @@ pub:
 
 	@echo "Updating gh-pages branch"
 	cd public && git add . && git commit -m "publishing to gh-pages" && git push origin gh-pages --force
+	git push origin master

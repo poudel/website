@@ -31,6 +31,7 @@
     :html-head nil
     :html-head-include-default-style nil
     :html-head-extra "<link rel='stylesheet' href='../static/index.css' />"
+    :html-doctype "html5"
 
     :auto-sitemap t
     :sitemap-title "keshab paudel's blog"
