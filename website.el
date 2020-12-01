@@ -11,7 +11,7 @@
 
    ("static"
     :base-directory "src"
-    :base-extension "css\\|js\\|png\\|svg"
+    :base-extension "css\\|js\\|png\\|svg\\|txt"
     :publishing-directory "public"
     :publishing-function org-publish-attachment
     :recursive t)

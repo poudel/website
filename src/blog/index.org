@@ -1,3 +1,4 @@
 #+TITLE: keshab paudel's blog
 
+- [[file:advent-of-code-2020-day-one.org][Advent of Code 2020, Day 1]]
 - [[file:hello-world.org][hello world]]

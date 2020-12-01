@@ -2,3 +2,5 @@
 *.*~
 public
 src/drafts
+venv
+*.pyc
