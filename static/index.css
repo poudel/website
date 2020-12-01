@@ -1,15 +1,19 @@
 body {
     font-family: Helvetica, sans-serif;
     color: #2a2a2a;
-}
-
-#content, #postamble {
     max-width: 1000px;
     margin: auto;
 }
 
-#postamble .validation {
-    display: none;
+#postamble {
+    margin-top: 30px;
+    border-top: dashed 1px lightgray;
+    padding-top: 10px;
+}
+
+#postamble p {
+    margin: 0 0;
+    font-size: 12px;
 }
 
 .footer {
