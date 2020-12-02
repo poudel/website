@@ -2,9 +2,15 @@
 #+date: <2020-12-01 Di 22:49>
 
 I'm trying to get into clojure these days. I'm not new to the lisp
-land; I maintain a pretty convoluted emacs config for a few years now.
+land; I maintain a pretty convoluted emacs config.
 
-The first challenge, I first solved it using Python's for loop.
+But I am still a beginner. Besides, clojure is not your typical lisp
+dialect.
+
+I tried solving the challenge using Python's for loop. Initially I was
+using `itertools.combinations_with_replacement` but I felt
+unnecessary, for the sake of simplicity.
+
 
 #+BEGIN_SRC python
 def find_2020():
@@ -21,8 +27,9 @@ print(find_2020())
 
 The result: ~1016131.0~. The input file: [[../static/advent-2020-input-day-one.txt][advent-2020-input-day-one.txt]]
 
-The actual goal, however, is to do it in clojure. I also want to
-implement the combination function on my own.
+The goal, however, is to do it in Clojure. After about a dozen tries,
+this is what I came up with:
+
 
 #+BEGIN_SRC clojure
 (def x-input [1895 1504 1660 1775 1743 1607 1267 1133 292
@@ -60,5 +67,6 @@ implement the combination function on my own.
     is-2020?
     (for [a x-input b x-input] [a b]))))
 #+END_SRC
+
 
 This is my solution. There are many like this but this one is mine.
