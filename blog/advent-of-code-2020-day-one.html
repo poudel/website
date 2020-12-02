@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2020-12-02 Mi 00:59 -->
+<!-- 2020-12-02 Mi 01:11 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Advent of Code 2020, Day 1</title>
@@ -60,12 +60,20 @@ for the JavaScript code in this tag.
 <h1 class="title">Advent of Code 2020, Day 1</h1>
 <p>
 I'm trying to get into clojure these days. I'm not new to the lisp
-land; I maintain a pretty convoluted emacs config for a few years now.
+land; I maintain a pretty convoluted emacs config.
 </p>
 
 <p>
-The first challenge, I first solved it using Python's for loop.
+But I am still a beginner. Besides, clojure is not your typical lisp
+dialect.
 </p>
+
+<p>
+I tried solving the challenge using Python's for loop. Initially I was
+using `itertools.combinations<sub>with</sub><sub>replacement</sub>` but I felt
+unnecessary, for the sake of simplicity.
+</p>
+
 
 <div class="org-src-container">
 <pre class="src src-python">def find_2020():
@@ -86,9 +94,10 @@ The result: <code>1016131.0</code>. The input file: <a href="../static/advent-20
 </p>
 
 <p>
-The actual goal, however, is to do it in clojure. I also want to
-implement the combination function on my own.
+The goal, however, is to do it in Clojure. After about a dozen tries,
+this is what I came up with:
 </p>
+
 
 <div class="org-src-container">
 <pre class="src src-clojure">(def x-input [1895 1504 1660 1775 1743 1607 1267 1133 292
@@ -128,6 +137,7 @@ implement the combination function on my own.
 </pre>
 </div>
 
+
 <p>
 This is my solution. There are many like this but this one is mine.
 </p>
@@ -135,7 +145,7 @@ This is my solution. There are many like this but this one is mine.
 <div id="postamble" class="status">
 <p class="date">Date: 2020-12-01 Di 22:49</p>
 <p class="author">Author: Keshab Paudel</p>
-<p class="date">Created: 2020-12-02 Mi 00:59</p>
+<p class="date">Created: 2020-12-02 Mi 01:11</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
